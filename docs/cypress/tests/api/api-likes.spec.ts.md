@@ -1,0 +1,3 @@
+This file, `api-likes.spec.ts`, tests the "Likes API". Before each test, it seeds the database using `cy.task`, logs in a user via `cy.loginByApi`, and fetches a test transaction ID using a custom `cy.database` command. The first test verifies a `GET` request to `/likes/:transactionId`, asserting a `200` status and that the response contains likes. The second test verifies a `POST` request to the same endpoint, creating a like and asserting a `200` status.
+
+**Keywords:** API testing, likes, transaction, cy.request, GET /likes, POST /likes, database seeding, authentication, assertions.

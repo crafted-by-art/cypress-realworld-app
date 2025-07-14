@@ -1,0 +1,3 @@
+This Cypress test suite, named "User Settings," validates the user profile settings page. Before each test, it seeds the database, logs in a user, and navigates to the settings page. The tests verify the form renders correctly, triggers and displays validation errors for invalid inputs in the name, email, and phone fields, and confirms a successful profile update. Key commands include `cy.task("db:seed")`, `cy.loginByXstate`, `cy.intercept`, and `cy.visualSnapshot`. Assertions check for element visibility, correct error messages, disabled states, and successful API responses.
+
+**Keywords:** User Settings, Form Validation, Profile Update, cy.intercept, db:seed, form errors, input validation, visual regression testing, cy.task.

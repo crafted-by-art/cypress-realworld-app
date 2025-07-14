@@ -1,0 +1,3 @@
+This HTML file acts as the root document for Cypress Component Testing. Its technical purpose is to provide a clean, blank mounting point for rendering UI components in isolation during tests. The core element is the `<div data-cy-root></div>`, which Cypress targets to inject and display the component being tested. This file sets up the basic browser environment (viewport, character set) required to render the component correctly, enabling focused testing without loading an entire application.
+
+**Keywords**: Cypress, component testing, `data-cy-root`, mount point, HTML template, component rendering, DOM, isolated test, UI testing.

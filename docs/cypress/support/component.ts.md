@@ -1,0 +1,4 @@
+This Cypress support file configures the global environment for component testing. It enables code coverage and imports custom commands from `commands.js`. Its primary function is to register a new custom command, `cy.mount`, using the `mount` function from the `cypress/react` library. This key command allows developers to render and test individual React components in isolation within their spec files. This file is automatically loaded before any component tests run, ensuring a consistent test setup.
+
+*   **Key Command:** `cy.mount`
+*   **Keywords:** component testing, support file, global configuration, React, custom command, code coverage, setup, mount

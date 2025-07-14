@@ -1,0 +1,3 @@
+This file defines reusable custom Cypress commands. One command, `database`, provides a generic interface to interact with a backend database via `cy.task`. Another key command, `loginByGoogleApi`, handles user authentication programmatically. It makes `cy.request` calls to Google's OAuth API to get an access token, fetches user info, and then stores the session token in `localStorage` to bypass UI login. A separate snippet demonstrates controlling a date picker UI element, using `cy.clock` to manipulate time, clicking buttons, and asserting element visibility.
+
+**Keywords:** custom commands, `loginByGoogleApi`, `database`, `cy.task`, `cy.request`, API login, `cy.clock`, localStorage, authentication.

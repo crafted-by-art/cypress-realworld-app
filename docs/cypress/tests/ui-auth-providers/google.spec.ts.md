@@ -1,0 +1,3 @@
+This Cypress test suite, named "Google," validates the user journey after a Google API login. It runs conditionally if a `googleClientId` environment variable exists. A `beforeEach` hook seeds the database, intercepts a POST request to `/bankAccounts`, and logs in a user via `cy.loginByGoogleApi()`. The main test simulates an end-to-end user onboarding flow by filling and submitting a bank account creation form, waiting for the API call to complete, and then logging out. Assertions verify dialog visibility, content, and the final URL path.
+
+**Keywords:** Google SSO, user onboarding, bank account, logout, authentication, cy.intercept, cy.wait, form submission, `getBySel`.

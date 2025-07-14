@@ -1,0 +1,3 @@
+This file, `api-users.spec.ts`, contains API integration tests for the "Users API". It validates user management endpoints, including creating (POST), retrieving (GET by ID, list, profile), updating (PATCH), and searching users. Before each test, the database is seeded and a user is authenticated via `cy.task("db:seed")` and a custom `cy.loginByApi` command. Tests use `cy.request()` to perform HTTP actions and `expect` to assert response status codes (e.g., 200, 201, 422) and body content, including error handling.
+
+**Keywords:** API testing, Users API, cy.request, user management, authentication, user search, db:seed, REST API.

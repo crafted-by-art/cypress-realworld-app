@@ -1,0 +1,3 @@
+This test suite, named "Cypress Studio Demo," contains placeholder tests designed to be recorded using the Cypress Studio feature. Before each test, a `beforeEach` hook executes two key actions: it first seeds the database to a known state using the `cy.task("db:seed")` command, and then it queries the database for a user with `cy.database("find", "users")`. Finally, it performs a programmatic login for that user with the custom `cy.login` command. The individual tests are stubs for creating a new transaction and a new bank account.
+
+**Keywords**: Cypress Studio, database seed, user login, authentication, `cy.task`, `cy.database`, `beforeEach`, transaction.

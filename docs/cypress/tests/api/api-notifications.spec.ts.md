@@ -1,0 +1,3 @@
+This file, `api-notifications.spec.ts`, validates the "Notifications API". Before each test, it seeds the database using `cy.task("db:seed")`, authenticates a user with `cy.loginByApi`, and fetches entity IDs. Tests use `cy.request` to perform actions. It verifies `GET /notifications` returns a list (status 200). It tests bulk creation via `POST /notifications/bulk` (status 200) and updates via `PATCH /notifications/:notificationId` to set `isRead: true` (status 204). It also asserts that sending an invalid field on PATCH fails with a 422 status.
+
+**Keywords**: API testing, notifications, `cy.request`, database seeding, GET, POST, PATCH, assertions, authentication.
