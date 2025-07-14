@@ -1,0 +1,3 @@
+This `transaction-feeds.spec.ts` file tests filtering and visibility for transaction feeds. It verifies that applying date and amount range filters correctly updates the transaction list and API request parameters. Tests assert that each transaction in the filtered list adheres to the selected range. It also confirms that clearing filters reverts the list to its original state. A separate suite ensures that personal, friends', and public feeds display the correct transactions based on the user's and their contacts' IDs, fetched using `cy.database`. Visual snapshots are captured to prevent UI regressions.
+
+**Keywords**: transaction feed, filter, date range, amount range, API, `cy.wait`, `cy.database`, visual regression, visibility rules.

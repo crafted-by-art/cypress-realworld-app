@@ -1,0 +1,3 @@
+This "User Sign-up and Login" test suite validates the complete authentication flow. It uses a `beforeEach` hook to seed the database (`cy.task`) and intercept API calls (`cy.intercept`). Tests verify user redirection, successful login/logout flows, and session persistence by checking cookies. The suite simulates user actions like typing into forms (`cy.type`) and clicking buttons (`cy.click`) to test the end-to-end signup and onboarding process. It also asserts that form validation errors and server-side login errors display correctly after specific user interactions like `.blur()`.
+
+**Keywords**: authentication, login, signup, session, form validation, user onboarding, Cypress, e2e, intercept, redirect.

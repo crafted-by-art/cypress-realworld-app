@@ -1,0 +1,4 @@
+This utility file exports a helper function, `isMobile`, for responsive testing. It does not contain any test suites or fixtures. The function's purpose is to determine if the current test viewport is of a mobile size. It achieves this by retrieving the current `viewportWidth` from `Cypress.config()` and comparing it to a custom `mobileViewportWidthBreakpoint` value from `Cypress.env()`. The function returns a boolean, enabling conditional logic in tests based on the viewport.
+
+*   **Key Commands**: `Cypress.config()`, `Cypress.env()`
+*   **Keywords**: responsive testing, viewport, helper function, mobile, breakpoint, utility, conditional logic

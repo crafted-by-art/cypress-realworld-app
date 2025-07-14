@@ -1,0 +1,3 @@
+This file, `api-transactions.spec.ts`, contains API tests for the "Transactions API". It uses `cy.request()` to perform GET, POST, and PATCH operations on various transaction-related endpoints (`/transactions`, `/transactions/contacts`, etc.). Before each test, the `beforeEach` hook seeds the database (`cy.task("db:seed")`), logs in a user, and retrieves test data like user and transaction IDs using a custom `cy.database()` command. Tests assert response status codes (e.g., 200, 204, 422) and validate the structure and content of the response body.
+
+**Keywords**: API testing, cy.request, transactions, database seeding, GET, POST, PATCH, assertions, payment.

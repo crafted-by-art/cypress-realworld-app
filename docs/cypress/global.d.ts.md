@@ -1,0 +1,3 @@
+This TypeScript declaration file (`global.d.ts`) extends Cypress with custom commands, defining types to support the entire test suite. It provides multiple authentication commands for logging in via UI, API, XState, Okta, and Cognito (`loginByApi`, `loginByXstate`). It adds custom selectors (`getBySel`), direct database interaction tasks (`cy.database`), and commands for creating transactions by bypassing the UI (`createTransaction`). The `window` object is augmented to expose XState services (`authService`) for direct state manipulation during tests, enabling efficient and stable test setup.
+
+**Keywords**: Cypress, custom commands, TypeScript, authentication, XState, database, `getBySel`, API testing.

@@ -1,0 +1,4 @@
+**Technical Explanation:**
+This file defines a custom Cypress command, `loginToAuth0`, for handling authentication. It uses `cy.session` to cache the login state, speeding up tests. The command navigates to the app, gets redirected to Auth0, and uses `cy.origin` to interact with the external domain. It types the username and password into their respective input fields and clicks "Continue". After a successful login, it asserts the URL has returned to the application and validates that an `authState` token exists in `localStorage`, confirming a successful session.
+
+**Keywords:** Auth0, login, authentication, custom command, cy.session, cy.origin, localStorage, session caching, redirect.

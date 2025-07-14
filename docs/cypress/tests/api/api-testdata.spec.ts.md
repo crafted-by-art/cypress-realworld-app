@@ -1,0 +1,3 @@
+This Cypress test file, `api-testdata.spec.ts`, validates the "Test Data API". The suite title is "Test Data API". In a `beforeEach` hook, it seeds the database with `cy.task('db:seed')` and performs an API login via the custom `cy.loginByApi` command. The primary test is dynamically generated for various data entities like users and contacts. Each test uses `cy.request()` to send a GET request to `/testData/:entity`. It then asserts the response status is 200 and that the returned `results` array contains more than one item.
+
+**Keywords**: API Testing, `cy.request`, `cy.task`, Database Seeding, Dynamic Tests, Authentication, HTTP GET, Assertions.

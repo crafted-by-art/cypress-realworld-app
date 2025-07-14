@@ -1,0 +1,3 @@
+This test file, `api-bankaccounts.spec.ts`, validates the "Bank Accounts API" through both REST and GraphQL endpoints. Before each test, it seeds the database (`db:seed`) and authenticates a user via `cy.loginByApi`. Tests use `cy.request` to perform CRUD operations: `GET`, `POST`, and `DELETE` on the `/bankAccounts` REST endpoint, and corresponding `listBankAccount`, `createBankAccount`, and `deleteBankAccount` GraphQL operations. Assertions verify HTTP 200 status codes and response body data, such as matching the correct `userId`. It uses `@faker-js/faker` for dynamic data.
+
+Keywords: bank accounts, REST, GraphQL, cy.request, CRUD, db:seed, api, authentication.

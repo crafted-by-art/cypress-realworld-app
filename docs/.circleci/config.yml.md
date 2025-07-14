@@ -1,0 +1,3 @@
+This CircleCI configuration orchestrates a comprehensive Cypress test workflow, running multiple test suites in parallel. It defines jobs for component, API, and UI tests, executing them across Chrome and Firefox for both desktop and mobile viewports. The primary action is executing `yarn cypress run` with specific spec patterns (e.g., `cypress/tests/ui/*`). It integrates Percy for visual regression testing (`percy exec`) and uploads reports to Codecov.
+
+**Keywords:** CircleCI, Cypress, parallel, E2E testing, component testing, API testing, Percy, Codecov, mobile viewport, cross-browser.

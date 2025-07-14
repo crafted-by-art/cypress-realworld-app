@@ -1,0 +1,3 @@
+This test suite, "Bank Transfer API", validates the `/bankTransfers` endpoint. A `beforeEach` hook handles setup by seeding the database (`cy.task("db:seed")`) and authenticating a user via a custom `cy.loginByApi` command. The test "gets a list of bank transfers for user" sends a `GET` request using `cy.request`. It then asserts the response status is 200 and validates that the `userId` in the first returned transfer matches the authenticated user's ID, ensuring correct data retrieval for the logged-in user.
+
+**Keywords**: api, bank transfer, authentication, cy.request, cy.task, db:seed, GET, assertion.
