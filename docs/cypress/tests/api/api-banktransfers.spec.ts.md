@@ -1,0 +1,2 @@
+Test suite "Bank Transfer API" verifies that a GET request to /bankTransfers returns bank transfers for the authenticated user. The test seeds the database, retrieves a user, authenticates via API login, then fetches bank transfers, asserting a 200 status and correct userId in response. Key actions: database seeding, user authentication, GET requests, status code and payload assertions. No fixtures used.  
+Keywords: Cypress, API testing, bank transfers, authentication, database seeding, status assertion, user context, GET request, automated test, backend API.
